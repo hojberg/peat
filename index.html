@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="js/vendor/wrench.0.0.2.min.js"></script>
+		<script>
+		// zeptojs
+		// (c) Thomas Fuchs
+		var $=function(a){if(typeof a=="function"){$.dom.forEach(a)}else{$.dom=[].slice.apply(document.querySelectorAll(a))}return $};$.html=function(a){return $(function(b){b.innerHTML=a})};$.append=function(a){return $(function(b){b.insertAdjacentHTML("beforeEnd",a)})};$.prepend=function(a){return $(function(b){b.insertAdjacentHTML("afterBegin",a)})};$.css=function(a){return $(function(b){b.style.cssText+=";"+a})};
+		</script>
+		<script src="js/app/peat.frontend.js"></script>
+	</head>
+	<body>
+		<div id="peat"></div>
+	</body>
+</html>
